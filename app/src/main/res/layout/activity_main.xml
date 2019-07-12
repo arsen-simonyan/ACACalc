@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android = "http://schemas.android.com/apk/res/android"
+	xmlns:app = "http://schemas.android.com/apk/res-auto"
+	xmlns:tools = "http://schemas.android.com/tools"
+	android:id="@+id/root"
+	android:background="@color/background"
+	android:layout_width = "match_parent"
+	android:layout_height = "match_parent"
+	tools:context = "am.newway.acacalc.MainActivity">
+
+	<TextView
+		android:id = "@+id/textNumber"
+		android:layout_width = "match_parent"
+		android:layout_height = "wrap_content"
+		android:layout_margin = "15dp"
+		android:background = "@color/colorPrimary"
+		android:ellipsize = "start"
+		android:gravity = "right"
+		android:padding = "10dp"
+		android:singleLine = "true"
+		android:text = "@string/text_zero"
+		android:textColor = "@android:color/white"
+		android:textSize = "70sp"
+		app:layout_constraintTop_toTopOf = "parent"
+		tools:ignore = "RtlHardcoded"
+		tools:layout_editor_absoluteX = "15dp"/>
+
+	<android.support.v7.widget.LinearLayoutCompat
+		android:layout_width = "match_parent"
+		android:layout_height = "0dp"
+		android:orientation="vertical"
+		android:layout_margin="15dp"
+		app:layout_constraintHorizontal_weight="1"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toBottomOf="@id/textNumber"
+		>
+
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:orientation="horizontal"
+			android:layout_weight="1"
+		>
+			<Button
+				android:id="@+id/bnt7"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/_7"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bnt8"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/_8"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bnt9"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/_9"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bntDivide"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/slash"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:orientation="horizontal"
+			android:layout_weight="1"
+		>
+			<Button
+				android:id="@+id/bnt4"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/_4"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bnt5"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/_5"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bnt6"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/_6"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bntMultiply"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/asterisk"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:orientation="horizontal"
+			android:layout_weight="1"
+		>
+			<Button
+				android:id="@+id/bnt1"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				app:backgroundTint="@color/colorAccent"
+				android:textColor="@android:color/white"
+				android:text="@string/_1"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bnt2"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/_2"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bnt3"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/_3"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bntMinus"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/minus"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:orientation="horizontal"
+			android:layout_weight="1"
+		>
+			<Button
+				android:id="@+id/bntBack"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/backspace"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bnt0"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				app:backgroundTint="@color/colorAccent"
+				android:text="@string/_0"
+				android:textColor="@android:color/white"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bntDot"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				app:backgroundTint="@color/colorAccent"
+				android:text="@string/dot"
+				android:textColor="@android:color/white"
+				tools:ignore = "ButtonStyle"/>
+
+			<Button
+				android:id="@+id/bntPlus"
+				android:layout_width = "match_parent"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/plus"
+				app:backgroundTint="@color/colorAccent"
+				tools:ignore = "ButtonStyle"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width = "match_parent"
+			android:layout_height = "0dp"
+			android:orientation="horizontal"
+			android:layout_weight="1"
+		>
+
+			<Button
+				android:id="@+id/bntEqual"
+				android:layout_width = "0dp"
+				android:layout_height = "match_parent"
+				android:layout_weight="1"
+				android:textSize="35sp"
+				android:textStyle="bold"
+				android:textColor="@android:color/white"
+				android:text="@string/equal"
+				app:backgroundTint="@color/equalButton"
+				tools:ignore = "ButtonStyle"/>
+		</LinearLayout>
+
+	</android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.constraint.ConstraintLayout>
